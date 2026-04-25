@@ -638,6 +638,20 @@
     backdrop-filter: blur(6px);
   }
 
+  /* ─── LIPS BANNER ─── */
+  .lips-banner {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  .lips-banner img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+
   /* ─── FOOTER ─── */
   footer {
     padding: 40px;
@@ -671,9 +685,14 @@
     .learn-items { grid-template-columns: 1fr; }
     .learn-items-bottom { flex-direction: column; }
     .learn-items-bottom .learn-item { max-width: 100%; flex: 1; }
-    .final-cta { padding: 80px 24px; }
-    .final-cta .cta-btn { padding: 18px 40px; font-size: 14px; }
-    .image-banner { padding: 40px 24px; }
+    .final-cta { padding: 60px 20px; }
+    .final-cta-box { padding: 40px 24px 36px; border-radius: 16px; }
+    .final-cta .cta-btn { padding: 18px 32px; font-size: 13px; letter-spacing: 2px; width: 100%; box-sizing: border-box; text-align: center; }
+    .final-cta h2 { font-size: clamp(32px, 10vw, 52px); }
+    .final-cta .final-sub { font-size: clamp(15px, 4vw, 20px); }
+    .lips-banner img { height: 260px; }
+    .marquee-wrap { padding: 16px 0; }
+    footer { padding: 30px 20px; font-size: 11px; }
   }
 </style>
 </head>
@@ -724,10 +743,6 @@
   </div>
 </div>
 
-<!-- UNMUTED IMAGE BANNER -->
-<div class="image-banner">
-  <img src="/mnt/user-data/uploads/Unmuted_Training_Feb_2026.png" alt="Unmuted — The Short-Form Content Formula That Gets You Seen, Saved & Sold" />
-</div>
 
 <!-- THIS IS FOR YOU -->
 <section class="for-you">
@@ -846,6 +861,11 @@
     <p class="notion-note">Ps. You can access everything using a free Notion account.</p>
   </div>
 </section>
+
+<!-- LIPS IMAGE -->
+<div class="lips-banner">
+  <img src="Unmuted lips.png" alt="" />
+</div>
 
 <!-- FOOTER MARQUEE -->
 <div class="marquee-wrap">
